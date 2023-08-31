@@ -1,6 +1,13 @@
 function validaChute(chute) {
     const numero = +chute;
-    console.log(numero);
+
+    if (chute.toLowerCase() === 'game over') {
+        document.body.classList.add('game-over');
+        document.body.innerHTML = `
+        <h3 class='mensagem-game-over'>GAME OVER</h3>
+        <button class='botao botao-game-over' id='jogar-novamente'>Jogar novamente</button>
+        `
+    }
 
     if (naoForNumero(numero)) {
         elementoChute.innerHTML += `

@@ -22,6 +22,15 @@ body {
     font-weight: 300;
 }
 
+.game-over {
+    background-color: var(--primary-color);
+}
+
+.mensagem-game-over {
+    color: var(--bg-color);
+    font-size: 6em;
+}
+
 h1 {
     font-size: 6em;
 }
@@ -59,7 +68,7 @@ h3 {
 
 .botao {
     background: var(--primary-color);
-    color: #BEADFA;
+    color: var(--bg-color);
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 1.5em;
@@ -73,4 +82,9 @@ h3 {
     background: var(--border-color);
     color: var(--primary-color);
     cursor: pointer;
+}
+
+.botao-game-over {
+    background: var(--bg-color);
+    color: var(--primary-color);
 }
